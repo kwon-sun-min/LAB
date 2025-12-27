@@ -71,7 +71,7 @@ export const Board = ({
   const { displayBoard, ghostCells } = renderBoard();
 
   return (
-    <div className="bg-gray-950 p-2 rounded-lg border-2 border-gray-700">
+    <div className="bg-black p-2 rounded-lg border-2 border-gray-800 shadow-[0_0_20px_rgba(0,0,0,0.8)]">
       <div className="grid grid-cols-10 gap-0">
         {displayBoard.map((row, y) =>
           row.map((cell, x) => {

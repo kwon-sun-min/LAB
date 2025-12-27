@@ -81,7 +81,12 @@ export const Game = () => {
   }, [gameState, movePiece, rotatePiece, hardDrop, holdPiece, startGame, togglePause]);
 
   return (
-    <div className="min-h-screen bg-gray-950 text-white flex items-center justify-center p-4">
+    <div 
+      className="min-h-screen text-white flex items-center justify-center p-4"
+      style={{
+        background: 'radial-gradient(circle at center, rgb(30, 0, 50) 0%, rgb(15, 0, 30) 50%, rgb(0, 0, 0) 100%)',
+      }}
+    >
       <div className="w-full max-w-4xl">
         {gameState === 'start' && (
           <div className="text-center space-y-6">
